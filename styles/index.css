@@ -1,0 +1,41 @@
+.profileIMG {
+    width: 12%;
+    height: auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 10%;
+}
+#name{
+    padding-left: 10%;
+    font-size: 25px;
+    text-shadow: 5px 5px 10px #6f6f6f;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 145, 255, 0.73);
+    border-radius: 10px;
+}
+#assignmentHeader {
+    text-align: center;
+    text-shadow: 5px 5px 10px #6f6f6f;
+}
+#assignments{
+    padding-left: 1%;
+}
+
+.AssignmentIdentifiers {
+    float: left;
+}
+footer{
+    text-align: center;
+    background-color: rgba(0, 145, 255, 0.73);
+    border-radius: 10px;
+}
+#BottomText{
+    text-align: center;
+}
+#updateTime{
+    color: rgb(255, 238, 0);
+}
+
