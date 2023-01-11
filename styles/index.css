@@ -5,12 +5,12 @@
     padding-left: 1%;
     border-radius: 10%;
 }
-#name{
+#headerName{
     padding-left: 10%;
     font-size: 25px;
     text-shadow: 5px 5px 10px #6f6f6f;
 }
-nav{
+#headerBar{
     display: flex;
     align-items: center;
     background-color: rgba(0, 145, 255, 0.73);
