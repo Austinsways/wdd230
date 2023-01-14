@@ -1,0 +1,68 @@
+body {
+    
+    
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+    background-color: #a0c5c4;
+    font-weight: bold;
+   
+}
+#CreatorName{
+    font-size: x-large;
+}
+#Websites{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+.WebsiteElement{
+   background-color: #848463;
+   border-radius: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: .1em solid black;
+}
+.MobileScreenshot{
+    width: 100%;
+}
+.ScreenshotDescription{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #848463;
+    border-radius: 10px;
+    border: .1em solid black;
+}
+#BottomText{
+    text-align: center;
+}
+#updateTime{
+    color: rgb(255, 238, 0);
+}
+
+
+
+@media only screen and (max-width: 768px){ /* size of ipad 3*/
+    #Websites{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 325px){ /* size of iphone 6*/
+    #Websites{
+        grid-template-columns: 1fr;
+    }
+}
+
