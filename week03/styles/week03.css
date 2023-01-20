@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     margin:0;
+}
+
+h1,h2,h3,h4,strong,a{
+    font-family: Lora;
+}
+
+p{
+    font-family: Montserrat;
 }
 html, body{
     padding: 0;
@@ -19,6 +29,7 @@ h1{
     padding-bottom: .5em;
     border: 1px solid black;
     border-radius: .2em;
+    margin-bottom: -1px; /* to avoid double border*/
     
 }
 a{
@@ -74,14 +85,24 @@ a:hover{
     grid-template-columns: 20% auto;
     background-color: rgb(165, 106, 42);
 }
-
+.examplesTemplate{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(165,106,42);
+}
+#tanExample{
+    background-color: tan;
+}
+#whiteExample{
+    background-color: white;
+}
 
 footer{
     text-align: center;
     background-color: tan;
     border-radius: 10px;
     border: 1px solid black;
-    
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -90,5 +111,12 @@ footer{
 }
 #updateTime{
     color: rgb(255, 238, 0);
+}
+
+/* nav bar stacking for mobile */
+@media (max-width: 37.5em) {
+    .navMenu{
+        flex-direction: column;
+    }
 }
 
