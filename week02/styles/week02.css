@@ -24,7 +24,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
 }
 h2 {
-    color: white;
+    color: black;
     text-align: center;
 }
 .WebsiteElement{
@@ -39,7 +39,7 @@ h2 {
 }
 .ScreenshotDescription{
     text-align: center;
-    color: white;
+    color: black;
 }
 
 footer{
