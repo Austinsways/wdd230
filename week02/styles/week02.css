@@ -58,14 +58,33 @@ footer{
 
 
 @media only screen and (max-width: 768px){ /* size of ipad 3*/
-    #Websites{
-        grid-template-columns: 1fr 1fr;
+    
+    #customSizedElement{
+        grid-column: 1/3;
+        grid-row: 2;
+        
     }
+    #CustomSizedImage{
+        width: 55%
+    }
+
+    #Websites{
+        
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    
 }
 
 @media only screen and (max-width: 325px){ /* size of iphone 6*/
     #Websites{
         grid-template-columns: 1fr;
+        
+    }
+    #customSizedElement{
+        grid-column: auto;
+        grid-row: auto;
     }
 }
 
