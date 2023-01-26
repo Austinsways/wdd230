@@ -1,0 +1,57 @@
+@media (max-width: 325px){
+    .mainContent{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        gap: .3em;
+        padding: .3em;
+        min-height: 200px;
+        
+    }
+    #Event{
+        grid-column: 1;
+        grid-row: 2;
+        
+    }
+    #Weather{
+        grid-column: 1;
+        grid-row: 3;
+        min-width: 200px;
+    }
+    #Join{
+        grid-column: 1;
+        grid-row:4;
+        visibility: hidden;
+    }
+    #Hero{
+        grid-column: 1;
+        grid-row: 1;
+       
+    }
+    #News{
+        grid-column: 1;
+        grid-row: 4;
+        
+    }
+    #spotlights{
+        grid-column: 1;
+        grid-row: 5/7;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: .3em;
+        padding: 1em;
+    }
+    
+    #Spotlight1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #Spotlight2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #Spotlight3{
+        visibility: hidden;
+    }
+}

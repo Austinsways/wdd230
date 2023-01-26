@@ -1,0 +1,72 @@
+@media (max-width: 37.5em) {
+    .navMenu{
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+    }
+    .headerLink{
+        display: none;
+    }
+    .icon{
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .mainContent{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: .3em;
+        padding: .3em;
+        min-height: 200px;
+        
+    }
+    
+    #Event{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        
+    }
+    #Weather{
+        grid-column: 3/4;
+        grid-row: 5;
+        min-width: 200px;
+    }
+    #Join{
+        grid-column: 1/4;
+        grid-row:4;
+    }
+    #Hero{
+        grid-column: 1/4;
+        grid-row: 1;
+       
+    }
+    #News{
+        grid-column: 1/4;
+        grid-row: 2;
+        
+    }
+    #spotlights{
+        grid-column: 1/4;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+        gap: .3em;
+        padding: 1em;
+    }
+    
+    #Spotlight1{
+        grid-column: 1;
+        
+    }
+    #Spotlight2{
+        grid-column: 2;
+    }
+    #Spotlight3{
+        visibility: hidden;
+    }
+}

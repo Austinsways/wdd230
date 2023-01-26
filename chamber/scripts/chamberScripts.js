@@ -16,3 +16,13 @@ document.querySelector(".currentMonth").textContent = months[currentDate.getMont
 
 document.querySelector(".currentYear").textContent = currentDate.getFullYear();
 
+function myFunction() {
+    var x = document.getElementsByClassName("navMenu");
+    if (x.style.display == "grid"){
+        x.style.display = "none";
+    }
+    else{
+        x.style.display = "grid";
+    }
+}
+
