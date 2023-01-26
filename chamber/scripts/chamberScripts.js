@@ -16,13 +16,21 @@ document.querySelector(".currentMonth").textContent = months[currentDate.getMont
 
 document.querySelector(".currentYear").textContent = currentDate.getFullYear();
 
-function myFunction() {
-    var x = document.getElementsByClassName("navMenu");
-    if (x.style.display == "grid"){
-        x.style.display = "none";
+function alternateDisplay(element){
+    if (element.style.display == "block"){
+        element.style.display = "none";
     }
     else{
-        x.style.display = "grid";
+        element.style.display = "block";
     }
 }
+function myFunction() {
+    let x = document.getElementsByClassName("headerLink");
+    let copyList = Array.from(x);
+    copyList.forEach(alternateDisplay);
+    let container = document.getElementsByClassName("navMenu");
+    
+    
+}
+
 

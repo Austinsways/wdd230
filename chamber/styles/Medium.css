@@ -3,9 +3,11 @@
         flex-direction: column;
         overflow: hidden;
         position: relative;
+        
     }
     .headerLink{
         display: none;
+        
     }
     .icon{
         background: black;
