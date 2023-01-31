@@ -131,7 +131,9 @@ a:hover{
     border: .01em solid black;
     
 }
-
+.icon{
+    display: none; /* dissapear in large mode*/
+}
 .headerLink{
     border: 1px solid black;
     
