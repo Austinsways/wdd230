@@ -6,7 +6,7 @@ document.querySelector("#currentYear").textContent = currentYearString;
 
 document.querySelector("#lastModified").textContent = document.lastModified;
 
-const dates = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dates = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 document.querySelector(".currentDay").textContent = dates[currentDate.getDay()];
 
 document.querySelector(".Date").textContent = currentDate.getDate();
@@ -31,6 +31,15 @@ function myFunction() {
     let container = document.getElementsByClassName("navMenu");
     
     
+}
+
+if (dates[currentDate.getDay()] == "Thursday" || dates[currentDate.getDay()] == "Tuesday"){
+    var banner = document.createElement("h3");
+    banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    banner.style.textAlign = "center";
+    banner.style.backgroundColor = '#6D6A75';
+    const headerRefrence = document.getElementsByTagName("header")[0];
+    headerRefrence.prepend(banner);
 }
 
 
