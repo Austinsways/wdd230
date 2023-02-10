@@ -9,6 +9,9 @@
         display: none;
         
     }
+    .logoImage {
+        width:200%;
+    }
     .icon{
         background: black;
         display: block;

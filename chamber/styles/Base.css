@@ -2,11 +2,14 @@
     .mainContent{
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: repeat(6,200px);
         gap: .3em;
         padding: .3em;
-        min-height: 200px;
         
+        
+    }
+    .logoImage {
+        width:300%;
     }
     #Event{
         grid-column: 1;

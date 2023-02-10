@@ -16,7 +16,15 @@
 
     <header>
         <div class = "Title">
-            <img src="images/B.png" alt="Boise Builders Logo" class = "Logo">
+            <picture class = "Logo">
+                <source srcset="images/B_250.webp" media="(min-width: 336px) and (max-width: 799px)">
+                <source srcset="images/B.webp" media="(min-width: 600px)">
+                <img  
+                src="images/B_100.webp" 
+                alt="Boise Builders Logo" 
+                class = "logoImage"
+                >
+            </picture>
             <h1 class = "commerceName">Boise Builders</h1>
             <h3 class = "lowerCommerceName">Chamber of Commerce</h3>
         </div>
@@ -48,7 +56,16 @@
         <div ID="Event" class="mainElement"> <h4>Event</h4></div>
         <div ID="Weather" class="mainElement"><h4>Weather</h4></div>
         <div ID="Join" class="mainElement"><a>Join</a></div>
-        <div ID="Hero" class="mainElement"><h4>Hero with site name and call to action</h4></div>
+        <div ID="Hero" class="mainElement"><h4>Hero with site name and call to action</h4>
+            <picture class = "HeroPicture">
+                <source srcset="images/wdd230-orgMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/wdd230-orgLarge.jpg" media="(min-width: 600px)">
+                <img  
+                src="images/wdd230-orgsmall.jpg" 
+                alt="BGroup working on something" 
+                class = "GroupPhoto"
+                >
+            </picture></div>
         <div ID="News" class="mainElement"><h4>News</h4></div>
         <div ID="spotlights" class="mainElement">
             <div class="Spotlight" ID="Spotlight1"><h4 class="spotlightText">Spotlight 1</h4></div>
