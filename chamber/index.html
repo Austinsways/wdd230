@@ -54,7 +54,18 @@
 
     <main class = "mainContent">
         <div ID="Event" class="mainElement"> <h4>Event</h4></div>
-        <div ID="Weather" class="mainElement"><h4>Weather</h4></div>
+        <div ID="Weather" class="mainElement"><h4>Weather</h4>
+            
+            <img id="WeatherIcon" src="images/WeatherIcon.png" alt="Picture of current weather type">
+            <input id="temperature" placeholder="Enter Temperature"  type="number">
+            <h5 id="WeatherType">(insert Weather Type)</h5>
+            
+            
+            <h5 id="WindSpeed">Wind Speed: km/h</h5><input id="WindSpeedNumber" placeholder="Enter Wind Speed" type="number">
+            <h5 id="WindChill">WindChill: </h5> <h5 id="WindChillNumber">N/A</h5>
+           
+            <script src="scripts/windchill.js"></script>
+        </div>
         <div ID="Join" class="mainElement"><a>Join</a></div>
         <div ID="Hero" class="mainElement"><h4>Hero with site name and call to action</h4>
             <picture class = "HeroPicture">
