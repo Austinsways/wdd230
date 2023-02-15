@@ -74,4 +74,12 @@
     #Spotlight3{
         visibility: hidden;
     }
+    #buildingsGrid{
+        display:grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 1fr 1fr;
+    }
+    #zionsBank{
+        grid-column: 1/3;
+    }
 }

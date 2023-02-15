@@ -1,7 +1,7 @@
 const currentDate = new Date();
 const currentYearString = currentDate.getFullYear();
-let currentTime = currentDate
-document.querySelector("#currentYear").textContent = currentYearString;
+let currentTime = currentDate.getMinutes();
+document.querySelector(".currentYear").textContent = currentYearString;
 
 
 document.querySelector("#lastModified").textContent = document.lastModified;

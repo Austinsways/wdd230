@@ -87,7 +87,7 @@ html, body{
     
     
 }
-.mainElement{
+.mainElement, .location{
     border: 1px solid black;
     border-radius: .2em;
     margin-bottom: -1px; /* to avoid double border*/
@@ -209,7 +209,7 @@ a:hover{
     margin-top: -1px; /*this is to allow the borders to perfectly overlap*/
     margin-left: -1px;
 }
-.answer{
+.answer,.location{
    
     border: 1px solid black;
     margin-top: -1px; /*this is to allow the borders to perfectly overlap*/
@@ -257,7 +257,21 @@ footer{
 #updateTime{
     color: #deb841;
 }
-
+#buildingsGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.location{
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr;
+}
+.location > h4{
+    text-align: center;
+}
+.buildingPhoto{
+    width:100%;
+    height: 100%;
+}
 /* nav bar stacking for mobile */
 
 

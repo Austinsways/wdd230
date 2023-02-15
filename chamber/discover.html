@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles/Large.css">
+    <link rel = "stylesheet" href = "styles/Medium.css">
+    <link rel = "stylesheet" href = "styles/Base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Discover Boise Building</title>
+</head>
+<body>
+    <header>
+        <div class = "Title">
+            <picture class = "Logo">
+                <source srcset="images/B_250.webp" media="(min-width: 336px) and (max-width: 799px)">
+                <source srcset="images/B.webp" media="(min-width: 600px)">
+                <img  
+                src="images/B_100.webp" 
+                alt="Boise Builders Logo" 
+                class = "logoImage"
+                >
+            </picture>
+            <h1 class = "commerceName">Boise Builders</h1>
+            <h3 class = "lowerCommerceName">Chamber of Commerce</h3>
+        </div>
+        <div class = "navMenu" ID="navMenu" >
+            <div class = "headerLink">
+            <a href="">Discover</a>
+            </div>
+            <div class = "headerLink">
+            <a href = "">Directory</a>
+            </div>
+            <div class = "headerLink">
+            <a href="">Join</a>
+            </div>
+            <div class = "headerLink">
+                <a href="">Contact</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onmousedown="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        
+        <div class="currentTime">
+            <h3><span class="currentDay">today</span>, <span class="Date">date</span> <span class="currentMonth">month</span> <span class="currentYear"></span></h3>
+        </div>
+    </header>
+
+    <div id="buildingsGrid">
+        <div class="location"><h4>Albertsons Stadium</h4>
+            <picture id = "AlbertsonsStadiumPhoto" class="building">
+                <source srcset="images/buildings/AlbertsonsStadium/AlbertsonsStadiumMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/buildings/AlbertsonsStadium/AlbertsonsStadium.jpg" media="(min-width: 600px)">
+                <img  
+                src="images/buildings/AlbertsonsStadium/AlbertsonsStadiumSmall.jpg" 
+                alt="Albertsons Stadium" 
+                class = "buildingPhoto"
+                >
+            </picture>
+            <p class="buildingDescription">Albertsons Stadium is home to Boise State Universitys Broncos! The Blue and Orange field is an iconic look, and does an amazing job of communicating the spunk and creative minds behind boise's builders.</p>
+        </div>
+        <div class="location"><h4>Boise Capitol Building</h4>
+            <picture id="CapitolBuildingPhoto" class="building">
+                <source srcset="images/buildings/CapitolBuilding/BoiseCapitolBuildingMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/buildings/CapitolBuilding/BoiseCapitolBuilding.jpeg" media="(min-width: 600px)">
+                <img  
+                src="images/buildings/CapitolBuilding/BoiseCapitolBuildingSmall.jpg" 
+                alt="CapitolBuilding" 
+                class = "buildingPhoto"
+                >
+            </picture>
+            <p class="buildingDescription">The Boise Capitol Building is exactly that! It's home to the government of the State of Idaho. Its construction started in 1905 and its longlasting structure is a great representation fo the quality behind Boise's builders.</p>
+        </div>
+        <div class="location"><h4>Idaho Old State Penitentary</h4>
+            <picture id="IdahoPenitentaryPhoto" class="building">
+                <source srcset="images/buildings/IdahoPenitentary/IdahoPenitentaryMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/buildings/IdahoPenitentary/IdahoPenitentary.jpeg" media="(min-width: 600px)">
+                <img  
+                src="images/buildings/IdahoPenitentary/IdahoPenitentarySmall.jpg" 
+                alt="Idaho Penitentary" 
+                class = "buildingPhoto"
+                >
+            </picture>
+            <p class="buildingDescription">The Idaho old State Penitentary was built in 1870 and is open to the public to see what the prison was like in the past. It was functional from 1872 to 1973.</p>
+        </div>
+        <div class="location"><h4>Boise Train Depot</h4>
+            <picture id="TrainDepotPhoto" class="building">
+                <source srcset="images/buildings/TrainDepot/BoiseTrainDepotMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/buildings/TrainDepot/BoiseTrainDepot.jpeg" media="(min-width: 600px)">
+                <img  
+                src="images/buildings/TrainDepot/BoiseTrainDepotSmall.jpg" 
+                alt="Boise Train Depot" 
+                class = "buildingPhoto"
+                >
+            </picture>
+            <p class="buildingDescription">The Boise Train Depot is a historic, Spanish style structure that provides a meeting place for people around Boise. It Provides Beauiful high up views of Boise.</p>
+        </div>
+        <div class="location" id="zionsBank"><h4>Zions Bank Building</h4>
+            <picture id="ZionsBankPhoto" class="building">
+                <source srcset="images/buildings/ZionsBank/ZionsBankBuildingMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
+                <source srcset="images/buildings/ZionsBank/ZionsBankBuilding.jpeg" media="(min-width: 600px)">
+                <img  
+                src="images/buildings/ZionsBank/ZionsBankBuildingSmall.jpg" 
+                alt="Zions Bank Building" 
+                class = "buildingPhoto"
+                >
+            </picture>
+            <p class="buildingDescription">The Zions bank building is one of Boise biggest Buildings! It owned by zions bank and is a funtional office for its employees. It's large size shows the growth of Boise's community.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>
+            <strong ID = "BottomText">
+                &copy; <a id = "currentYear">2022</a> .:|:. Austin Eldredge .:|:. Idaho 
+            </strong>
+        </p>
+        <p ID = "updateTime">
+            Last Updated <a ID = "lastModified">1/5/2023 5:46 PM</a>
+        </p>
+    </footer>
+
+    <script src = "scripts/chamberScripts.js"></script>
+</body>
+</html>
