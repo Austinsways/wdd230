@@ -16,6 +16,8 @@ document.querySelector(".currentMonth").textContent = months[currentDate.getMont
 
 document.querySelector(".currentYear").textContent = currentDate.getFullYear();
 
+
+
 function alternateDisplay(element){
     if (element.style.display == "block"){
         element.style.display = "none";
@@ -43,3 +45,47 @@ if (dates[currentDate.getDay()] == "Monday" || dates[currentDate.getDay()] == "T
 }
 
 
+const daysDisplay = document.getElementById("daysSinceLastVisit");
+if (!localStorage.getItem("daysSinceVisit")){
+    localStorage.setItem("daysSinceVisit", 0);
+    daysDisplay.textContent = "never";
+} else {
+    const daysSinceVisit = (localStorage.getItem("lastYear") - currentDate.getFullYear())*365 + (localStorage.getItem("lastMonth") - currentDate.getMonth())*31 + (localStorage.getItem("lastDay") - currentDate.getDay());
+    daysDisplay.textContent = daysSinceVisit*-1;
+    localStorage.setItem("daysSinceVisit", 0);
+    
+}
+localStorage.setItem("lastYear", currentDate.getFullYear());
+//localStorage.setItem("lastYear", 2022); //for testing only
+localStorage.setItem("lastMonth", currentDate.getMonth());
+localStorage.setItem("lastDay", currentDate.getDay());
+
+ /* this code is for setting the source for a lazy loaded picture but does not work with srcset*/
+// function preloadImage(img){
+//     const src = img.getAttribute("data-src");
+//     if (!src){
+//         return;
+//     }
+//     img.src = src;
+// }
+
+// const images = document.querySelectorAll(".buildingPhoto");
+
+
+// const imageOptions = {};
+// const imageObserver = new IntersectionObserver((entries, imageObserver) => {
+//     entries.forEach(entry => {
+//         if(!entry.isIntersecting){
+//             return;
+//         } else{
+//             preloadImage(entry.target);
+//             imageObserver.unobserve(entry.target);
+//         }
+
+//     });
+    
+// }, imageOptions);
+
+// images.forEach(image => {
+//     imageObserver.observe(image);
+// })

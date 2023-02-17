@@ -65,4 +65,13 @@
     #zionsBank{
         grid-column: 1;
     }
+    .buildingPhoto{
+        transition: none; /* Animation */
+        width:100%;
+        height: 100%;
+    }
+    .buildingPhoto:hover{
+        transform: none; /* zoom in when hovered over*/
+    }
+    
 }
