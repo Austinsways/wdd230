@@ -1,0 +1,36 @@
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 7px var(--shadow);
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid lightgrey;
+    text-align: center;
+}
+tr:first-child th, .highlight {
+	background-color: black;
+	color: white;
+}
+#blank {
+    background-color: black;
+}
+.colheaders{
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+}
+.rowheaders {
+    font-weight: bold;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
