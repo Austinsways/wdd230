@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles/Large.css">
+    <link rel = "stylesheet" href = "styles/Medium.css">
+    <link rel = "stylesheet" href = "styles/Base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Join Boise Building</title>
+</head>
+<body>
+    <header>
+        <div class = "Title">
+            <picture class = "Logo">
+                <source srcset="images/B_250.webp" media="(min-width: 336px) and (max-width: 799px)">
+                <source srcset="images/B.webp" media="(min-width: 600px)">
+                <img  
+                src="images/B_100.webp" 
+                alt="Boise Builders Logo" 
+                class = "logoImage"
+                >
+            </picture>
+            <h1 class = "commerceName">Boise Builders</h1>
+            <h3 class = "lowerCommerceName">Chamber of Commerce</h3>
+        </div>
+        <div class = "navMenu" ID="navMenu" >
+            <div class = "headerLink">
+            <a href="">Discover</a>
+            </div>
+            <div class = "headerLink">
+            <a href = "">Directory</a>
+            </div>
+            <div class = "headerLink">
+            <a href="">Join</a>
+            </div>
+            <div class = "headerLink">
+                <a href="">Contact</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onmousedown="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        
+        <div class="currentTime">
+            <h3><span class="currentDay">today</span>, <span class="Date">date</span> <span class="currentMonth">month</span> <span class="currentYear"></span></h3>
+        </div>
+    </header>
+
+    <div id="daysStorage"><p>Days since last visit: <strong id="daysSinceLastVisit">days</strong></p></div>
+
+    <main id="content">
+        <form method="get" action="thankyou.html" id="applicationForm">
+            <label id="fname" name="fname">
+                First Name: <input type="text">
+            </label>
+            
+            <label id="lname" name="lname">
+                Last Name: <input type="text">
+            </label>
+            <label id="buisnessTitle" name="buisnessTitle">
+                Buisness Position Title: <input type="text">
+            </label>
+            <label id="email" name="email">
+                Email: <input type="text" placeholder="myself@buisnessemail.com">
+            </label>
+            <label id="phoneNumber" name="phoneNumber">
+                Cell Phone Number: <input type="text">
+            </label>
+            <label id="buisnessName" name="buisnessName">
+                Buisness Name: <input type="text">
+            </label>
+            <label id="membershipLevel" name="membershipLevel">
+                Membership Level: 
+                <select>
+                    <option value="">--Please choose an option--</option>
+                    <option value="npMembership">NP Membership (for nonprofit)</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+            <label id="buisnessDescription" name="buisnessDescription"> 
+                Buisness Description <textarea></textarea>
+            </label>
+            <input type="hidden" id="hiddenTime" name="hiddenTime"></input>
+            <button type="submit" id="formSubmission">Submit Application</button>
+        </form>
+
+        <table id="MembershipInformation">
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">
+                        Boise Builders Memberships
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col" id="blank"> </th>
+                
+                    <th scope="col" class="colheaders">Deluxe</th>
+                
+                    <th scope="col" class="colheaders">Premium</th>
+                
+                    <th scope="col" class="colheaders">Basic</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rowheaders">
+                        See New Listings
+                    </td>
+                    <td >
+                        &#x2713;
+                    </td>
+                    <td>
+                        &#x2713;
+                    </td>
+                    <td>
+                        &#x2713;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rowheaders">
+                        Monthly Newsletter
+                    </td>
+                    <td>
+                        X
+                    </td>
+                    <td>
+                        &#x2713;
+                    </td>
+                    <td>
+                        &#x2713;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rowheaders">
+                        Attend Board Meetings
+                    </td>
+                    <td>
+                        X
+                    </td>
+                    <td>
+                        X
+                    </td>
+                    <td>
+                        &#x2713;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+    <footer>
+        <p>
+            <strong ID = "BottomText">
+                &copy; <a id = "currentYear">2022</a> .:|:. Austin Eldredge .:|:. Idaho 
+            </strong>
+        </p>
+        <p ID = "updateTime">
+            Last Updated <a ID = "lastModified">1/5/2023 5:46 PM</a>
+        </p>
+    </footer>
+
+    <script src = "scripts/chamberScripts.js"></script>
+</body>
+</html>

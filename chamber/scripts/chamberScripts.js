@@ -51,7 +51,7 @@ if (!localStorage.getItem("daysSinceVisit")){
     daysDisplay.textContent = "never";
 } else {
     const daysSinceVisit = (localStorage.getItem("lastYear") - currentDate.getFullYear())*365 + (localStorage.getItem("lastMonth") - currentDate.getMonth())*31 + (localStorage.getItem("lastDay") - currentDate.getDay());
-    daysDisplay.textContent = daysSinceVisit*-1;
+    daysDisplay.textContent = daysSinceVisit;
     localStorage.setItem("daysSinceVisit", 0);
     
 }

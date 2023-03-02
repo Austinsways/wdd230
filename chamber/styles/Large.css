@@ -276,6 +276,57 @@ footer{
 .buildingPhoto:hover{
     transform: scale(1.5); /* zoom in when hovered over*/
 }
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#applicationForm{
+    display: grid;
+    justify-content: center;
+    justify-items: end;
+    row-gap: 10px;
+    padding: 20px;
+}
+table {
+	margin: 10px auto;
+	
+	box-shadow: 0 0 7px;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid lightgrey;
+    text-align: center;
+}
+tr:first-child th, .highlight {
+	background-color:#37323E;
+	color: white;
+}
+#blank {
+    background-color: #37323E;
+}
+.colheaders{
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+}
+.rowheaders {
+    font-weight: bold;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+
+
+
 
 
 
