@@ -324,6 +324,35 @@ tbody tr:nth-child(even){
     background-color: lightgray;
 }
 
+#directoryWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.buisness{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40% 10% 10% 10% 20%;
+    text-align: center;
+    border: 1px black;
+    box-shadow: 5px 5px 5px 1px;
+    background-color:#bfbdc1;
+    
+}
+.buisnessTitles{
+    grid-column: 1;
+    grid-row: 1;
+}
+.logoWrapper{
+    display: grid;
+    place-items: center;
+    grid-row: 2;
+}
+.buisnessLogo{
+    height:4em;
+}
 
 
 

@@ -89,3 +89,5 @@ localStorage.setItem("lastDay", currentDate.getDay());
 // images.forEach(image => {
 //     imageObserver.observe(image);
 // })
+
+//getting JSON data to populate the buisness cards in the directory webpage
