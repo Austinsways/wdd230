@@ -4,7 +4,7 @@
              
             {
                 "name" : "Northwest Building Systems",
-                "logoPath" : "wdd230/chamber/images/NWBS.png",
+                "logoPath" : "/wdd230/chamber/images/NWBS.png",
                 "address" : "405 E Boeing Ln Boise Idaho",
                 "phone" : "(208) 647-4935",
                 "website" : "https://nwbsinc.com/"
@@ -12,7 +12,7 @@
              
             {
                 "name" : "Forge Building Company",
-                "logoPath" : "wdd230/chamber/images/ForgeLogo.png",
+                "logoPath" : "/wdd230/chamber/images/ForgeLogo.png",
                 "address": "2785 N Bogus Basin Rd Boise Idaho",
                 "phone": "(208) 629-2952",
                 "website": "forgebuildings.com"
@@ -20,7 +20,7 @@
             
             {
                 "name" : "Scott Hendrick Construction",
-                "logoPath" : "wdd230/chamber/images/ScottLogo.png",
+                "logoPath" : "/wdd230/chamber/images/ScottLogo.png",
                 "address": "1154 N Orchard St Boise Idaho",
                 "phone": "(208) 345-5800",
                 "website": "www.scotthedrick.com"
@@ -28,7 +28,7 @@
              
             {
                 "name" : "Levco Builders",
-                "logoPath" : "wdd230/chamber/images/LevcoLogo.png",
+                "logoPath" : "/wdd230/chamber/images/LevcoLogo.png",
                 "address" : "114 E 35th St Boise Idaho",
                 "phone" : "(208) 947-7261",
                 "website" : "levcobuilders.com"
@@ -36,7 +36,7 @@
             
             {
                 "name" : "EKC Construction",
-                "logoPath" : "wdd230/chamber/images/EKCLogo.png",
+                "logoPath" : "/wdd230/chamber/images/EKCLogo.png",
                 "address" : "250 Bobwhite Ct #100 Boise Idaho",
                 "phone" : "(208) 345-8944",
                 "website": "ekcconstruction.com"
@@ -44,7 +44,7 @@
              
             {
                 "name" : "Okland Construction",
-                "logoPath" : "wdd230/chamber/images/OklandLogo.png",
+                "logoPath" : "/wdd230/chamber/images/OklandLogo.png",
                 "address" : "101 S Capitol Blvd #504 Boise Idaho",
                 "phone" : "(208) 576-6077",
                 "website": "www.okland.com"
@@ -52,7 +52,7 @@
             
             {
                 "name" : "K2 Construction",
-                "logoPath" : "wdd230/chamber/images/K2Logo.png",
+                "logoPath" : "/wdd230/chamber/images/K2Logo.png",
                 "address" : "8555 W Hackamore Dr Ste. 200 Boise Idaho",
                 "phone" : "(208) 377-9139",
                 "website": "www.k2cm.com"
@@ -60,7 +60,7 @@
             
             {
                 "name" : "Freeman's Construction",
-                "logoPath" : "wdd230/chamber/images/FreemansLogo.png",
+                "logoPath" : "/wdd230/chamber/images/FreemansLogo.png",
                 "address" : "950 W Bannock St Suite 1100 Boise Idaho",
                 "phone" : "(208) 296-7516",
                 "website": "tfgonline.com"
@@ -68,7 +68,7 @@
              
             {
                 "name" : "Zack Evans Construction",
-                "logoPath" : "wdd230/chamber/images/ZachLogo.png",
+                "logoPath" : "/wdd230/chamber/images/ZachLogo.png",
                 "address" : "7761 W Riverside Dr #100 Boise Idaho",
                 "phone" : "(208) 853-1205",
                 "website": "zecinc.com"
