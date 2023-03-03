@@ -314,6 +314,7 @@ tr:first-child th, .highlight {
 .rowheaders {
     font-weight: bold;
 }
+
 caption {
     padding: 10px;
     caption-side: bottom;
