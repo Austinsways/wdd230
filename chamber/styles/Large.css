@@ -334,7 +334,7 @@ tbody tr:nth-child(even){
 .buisness{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 40% 10% 10% 10% 20%;
+    grid-template-rows: 10% 100px 10% 10% 10% 20%;
     text-align: center;
     border: 1px black;
     box-shadow: 5px 5px 5px 1px;
@@ -351,7 +351,7 @@ tbody tr:nth-child(even){
     grid-row: 2;
 }
 .buisnessLogo{
-    height:4em;
+    height:100px;
 }
 
 
