@@ -73,5 +73,8 @@
     .buildingPhoto:hover{
         transform: none; /* zoom in when hovered over*/
     }
+    #directoryWrapper{
+        grid-template-columns: 1fr;
+    }
     
 }

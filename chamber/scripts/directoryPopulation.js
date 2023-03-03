@@ -26,4 +26,24 @@ async function populateBuisnesses() {
 }
 
 populateBuisnesses();
+
+
+//this is to switch views
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.getElementById("directoryWrapper");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.style.display = "grid";
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.style.display = "flex";
+    display.style.flexDirection = "column";
+}
     
