@@ -355,7 +355,7 @@ tbody tr:nth-child(even){
 }
 .logoWrapper{
     display: grid;
-
+    height: auto;
     place-items: center;
     grid-row: 2;
 }
