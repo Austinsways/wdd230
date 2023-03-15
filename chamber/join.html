@@ -53,26 +53,26 @@
 
     <main id="content">
         <form method="get" action="thankyou.html" id="applicationForm">
-            <label id="fname" name="fname">
+            <label id="fname">
                 First Name: <input type="text">
             </label>
             
-            <label id="lname" name="lname">
+            <label id="lname">
                 Last Name: <input type="text">
             </label>
-            <label id="buisnessTitle" name="buisnessTitle">
+            <label id="buisnessTitle" >
                 Buisness Position Title: <input type="text">
             </label>
-            <label id="email" name="email">
-                Email: <input type="text" placeholder="myself@buisnessemail.com">
+            <label id="email" >
+                Email: <input type="email" placeholder="myself@buisnessemail.com">
             </label>
-            <label id="phoneNumber" name="phoneNumber">
-                Cell Phone Number: <input type="text">
+            <label id="phoneNumber" >
+                Cell Phone Number: <input type="tel">
             </label>
-            <label id="buisnessName" name="buisnessName">
+            <label id="buisnessName" >
                 Buisness Name: <input type="text">
             </label>
-            <label id="membershipLevel" name="membershipLevel">
+            <label id="membershipLevel" >
                 Membership Level: 
                 <select>
                     <option value="">--Please choose an option--</option>
@@ -82,13 +82,14 @@
                     <option value="gold">Gold</option>
                 </select>
             </label>
-            <label id="buisnessDescription" name="buisnessDescription"> 
+            <label id="buisnessDescription" > 
                 Buisness Description <textarea></textarea>
             </label>
-            <input type="hidden" id="hiddenTime" name="hiddenTime"></input>
+    
             <button type="submit" id="formSubmission">Submit Application</button>
+            <p hidden id="timeAccessed"></p>
         </form>
-
+        
         <table id="MembershipInformation">
             <caption>Table 1: Account Feature Comparison</caption>
             <thead>
@@ -168,5 +169,6 @@
     </footer>
 
     <script src = "scripts/chamberScripts.js"></script>
+    <script src="scripts/joinHiddenForm.js"></script>
 </body>
 </html>
