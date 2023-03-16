@@ -1,23 +1,43 @@
 // Get the div element
-const spotlightedCompany = [...document.getElementsByClassName('.spotlightedcompany')]; //an array of the spotlighted company divs
+const spotlightedCompany = [...document.getElementsByClassName('spotlightedcompany')]; //an array of the spotlighted company divs
 const url = 'https://austinsways.github.io/wdd230/chamber/data/data.json';
 // Define the JSON data
 
 
 async function retrieveData() {
     const response = await fetch(url);
-    const data = await response.json();
-    const buisnessdata = data["Members"];
-    return buisnessdata;
+    const unspecifieddata = await response.json();
+    const data = unspecifieddata["Members"];
+    let usedNumber = []; // a list of index's chosen for spotlights
+    for (let index = 0; index < 3; index++){
+        let min = 0;
+        let max = data.length - 1;
+        
+        
+        let used = false;
+        let randomInt = 0;
+        do {randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+            used = false;
+            for (let i = 0; i < usedNumber.length; i++) {
+                if (usedNumber[i] === randomInt) {
+                  used = true;
+                  break;
+                }
+              }}
+        while (used);
+        usedNumber.push(randomInt);
+
+        spotlightedCompany[index].querySelector('h2').textContent = data[randomInt].name;
+        spotlightedCompany[index].querySelector('img').src = data[randomInt].logoPath;
+        spotlightedCompany[index].querySelector('p:nth-of-type(1)').textContent = data[randomInt].slogan;
+        spotlightedCompany[index].querySelector('p:nth-of-type(2)').textContent = data[randomInt].address;
+        spotlightedCompany[index].querySelector('p:nth-of-type(3)').textContent = data[randomInt].phone;
+        spotlightedCompany[index].querySelector('p:nth-of-type(4) a').textContent = data[randomInt].website;
+        spotlightedCompany[index].querySelector('p:nth-of-type(4) a').href = 'http://' + data[randomInt].website;
+    }
 }
-const memberData = retrieveData();
+retrieveData();
 
 
 // Populate the HTML with the JSON data
-spotlightedCompany[0].querySelector('h2').textContent = data[0].name;
-spotlightedCompany[0].querySelector('img').src = data[0].logoPath;
-spotlightedCompany[0].querySelector('p:nth-of-type(1)').textContent = data[0].slogan;
-spotlightedCompany[0].querySelector('p:nth-of-type(2)').textContent = data[0].address;
-spotlightedCompany[0].querySelector('p:nth-of-type(3)').textContent = data[0].phone;
-spotlightedCompany[0].querySelector('p:nth-of-type(4) a').textContent = data[0].website;
-spotlightedCompany[0].querySelector('p:nth-of-type(4) a').href = 'http://' + data[0].website;
+

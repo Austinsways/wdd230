@@ -63,13 +63,20 @@
         gap: .3em;
         padding: 1em;
     }
-    
+    .Spotlight{
+        height: 100%;
+    }
+    .spotlightedcompany{
+        width: 100%;
+    }
     #Spotlight1{
         grid-column: 1;
+        grid-row: 2;
         
     }
     #Spotlight2{
         grid-column: 2;
+        grid-row: 2;
     }
     #Spotlight3{
         visibility: hidden;
@@ -85,5 +92,6 @@
     #directoryWrapper{
         grid-template-columns: 50% 50%;
     }
+    
     
 }
