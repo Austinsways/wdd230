@@ -85,6 +85,7 @@ html, body{
     gap: .3em;
     padding: .3em;
     max-height: 100vh;
+    padding-bottom: 50px;
     
     
 }
@@ -179,7 +180,8 @@ html, body{
     border: 1px solid black;
     border-radius: .2em;
     margin-bottom: -1px; /* to avoid double border*/
-    background-color: #6D6A75
+    background-color: #6D6A75;
+    width: 100%
 }
 
 a:link, a:visited{
@@ -530,7 +532,9 @@ table tr {
     padding-top: 20px;
     text-align: center;
   }
-  
+  header a{
+    grid-row: 1/4;
+  }
 
 
 
