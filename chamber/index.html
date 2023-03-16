@@ -37,6 +37,7 @@
             </div>
             <div class = "headerLink">
             <a href="">Join</a>
+            
             </div>
             <div class = "headerLink">
                 <a href="">Contact</a>
@@ -55,7 +56,9 @@
     </header>
 
     <main class = "mainContent">
-        <div ID="Event" class="mainElement"> <h4>Event</h4></div>
+        <div ID="Event" class="mainElement"> <h4>Event</h4>
+            On the weekend of June 10th, 2022, the annual "Build Boise" event took place in downtown Boise, Idaho. This event was organized by the local chapter of the National Association of Home Builders and brought together builders, contractors, and construction professionals from across the region to showcase their latest projects, products, and services. Attendees were able to tour model homes, attend workshops and seminars, and learn about the latest trends and innovations in the industry. The event also featured a job fair where job seekers could meet with potential employers and explore career opportunities in the construction field. Overall, Build Boise was a successful event that highlighted the vibrant and growing construction industry in the Boise area.
+        </div>
         <div ID="Weather" class="mainElement"><h4>Weather</h4>
             
             <img id="WeatherIcon" src="images/WeatherIcon.png" alt="Picture of current weather type">
@@ -69,7 +72,9 @@
            
             <script src="scripts/weatherAPI.js"></script>
         </div>
-        <div ID="Join" class="mainElement"><a>Join</a></div>
+        <div ID="Join" class="mainElement"><a id="JoinPrompt">Join</a>
+            <p>Joining the Boise Chamber of Commerce offers access to valuable resources and a community of like-minded professionals dedicated to supporting each other and building a stronger business community in Boise, while also providing opportunities to make a positive impact on the local community. Don't wait - <a href="join.html">join</a> the Boise Chamber of Commerce today to grow your business, expand your network, and give back to the community.</p>
+            </div>
         <div ID="Hero" class="mainElement"><h4>Hero with site name and call to action</h4>
             <picture class = "HeroPicture">
                 <source srcset="images/wdd230-orgMedium.jpg" media="(min-width: 336px) and (max-width: 599px)">
@@ -82,10 +87,20 @@
             </picture></div>
         <div ID="News" class="mainElement"><h4>News</h4></div>
         <div ID="spotlights" class="mainElement">
-            <div class="Spotlight" ID="Spotlight1"><h4 class="spotlightText">Spotlight 1</h4></div>
+            <div class="Spotlight" ID="Spotlight1"><h4 class="spotlightText">Spotlight 1</h4>
+                <div class="spotlightedcompany">
+                    <h2>Timberline Builders</h2>
+                    <img src="https://via.placeholder.com/150" alt="Company Logo">
+                    <p>Crafting Custom Homes for Your Unique Lifestyle</p>
+                    <p>789 Maple Ave, Boise, ID 83703</p>
+                    <p>(208) 555-9012</p>
+                    <p><a href="http://timberlinebuildersboise.com">timberlinebuildersboise.com</a></p>
+                  </div>
+            </div>
             <div class="Spotlight" ID="Spotlight2"><h4 class="spotlightText">Spotlight 2</h4></div>
             <div class="Spotlight" ID="Spotlight3"><h4 class="spotlightText">Spotlight 3</h4></div>
         </div>
+        <script src="scripts/selectSpotlights.js"></script>
     </main>
 
 

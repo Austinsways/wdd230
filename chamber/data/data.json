@@ -75,5 +75,56 @@
             }
             
 
+
+        ],
+        "Members": [
+            {"name" : "Pioneer Construction",
+                "logoPath" : "/wdd230/chamber/images/FreemansLogo.png",
+                "address" : "456 Oak St, Boise, ID 83709",
+                "phone" : "(208) 555-5678",
+                "website": "www.pioneerconstructionboise.com",
+                "slogan": "Building the Future Today"},
+            {
+                "name" : "Timberline Builders",
+                "logoPath" : "/wdd230/chamber/images/FreemansLogo.png",
+                "address" : "789 Maple Ave, Boise, ID 83703",
+                "phone" : "(208) 555-9012",
+                "website": "timberlinebuildersboise.com",
+                "slogan": "Crafting Custom Homes for Your Unique Lifestyle"
+            },
+            {
+                "name" : "Boise Builders Supply",
+                "logoPath" : "/wdd230/chamber/images/FreemansLogo.png",
+                "address" : "1010 Cedar Rd, Boise, ID 83704",
+                "phone" : "(208) 555-3456",
+                "website": "www.boisebuildersupply.com",
+                "slogan": "Providing Quality Building Materials for Your Project"
+            },
+            {
+                "name" : "K2 Construction",
+                "logoPath" : "/wdd230/chamber/images/K2Logo.png",
+                "address" : "8555 W Hackamore Dr Ste. 200 Boise Idaho",
+                "phone" : "(208) 377-9139",
+                "website": "www.k2cm.com",
+                "slogan": "Building excellence, one project at a time"
+            },
+            
+            {
+                "name" : "Freeman's Construction",
+                "logoPath" : "/wdd230/chamber/images/FreemansLogo.png",
+                "address" : "950 W Bannock St Suite 1100 Boise Idaho",
+                "phone" : "(208) 296-7516",
+                "website": "tfgonline.com",
+                "slogan": "Crafting your vision into reality"
+            },
+             
+            {
+                "name" : "Zack Evans Construction",
+                "logoPath" : "/wdd230/chamber/images/ZachLogo.png",
+                "address" : "7761 W Riverside Dr #100 Boise Idaho",
+                "phone" : "(208) 853-1205",
+                "website": "zecinc.com",
+                "slogan": "Innovative solutions for every construction need"
+            }
         ]
 }
