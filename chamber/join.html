@@ -54,23 +54,23 @@
     <main id="content">
         <form method="get" action="thankyou.html" id="applicationForm">
             <label id="fname">
-                First Name: <input type="text">
+                First Name: <input type="text" required>
             </label>
             
             <label id="lname">
-                Last Name: <input type="text">
+                Last Name: <input type="text" required>
             </label>
-            <label id="buisnessTitle" >
-                Buisness Position Title: <input type="text">
+            <label id="buisnessTitle*" >
+                Buisness Position Title: <input type="text" pattern="^[a-zA-Z\s\-]{7,}$">
             </label>
             <label id="email" >
-                Email: <input type="email" placeholder="myself@buisnessemail.com">
+                Email: <input type="email" placeholder="myself@buisnessemail.com" required>
             </label>
             <label id="phoneNumber" >
-                Cell Phone Number: <input type="tel">
+                Cell Phone Number: <input type="tel" required>
             </label>
             <label id="buisnessName" >
-                Buisness Name: <input type="text">
+                Buisness Name: <input type="text" required>
             </label>
             <label id="membershipLevel" >
                 Membership Level: 
