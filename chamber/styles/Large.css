@@ -55,10 +55,12 @@ html, body{
 }
 .groupPhoto{
     width: 1em;
+   
     
 }
 .GroupPhoto{
-    width:100%;
+    width:130%;
+    height: 100%;
 }
 .commerceName{
     padding-left: 1em;
@@ -154,6 +156,11 @@ html, body{
 #Hero{
     grid-column: 2/4;
     grid-row: 1/3;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "picture";
+
+    
    
 }
 #News{
@@ -185,7 +192,7 @@ html, body{
 }
 
 a:link, a:visited{
-    color: hsl(270, 3%, 75%);
+    color: #ffffff;
 }
 a:hover{
     color:green;
@@ -539,5 +546,11 @@ table tr {
 h1, h2, h3, h4, h5, p, a { /*color for contrasted text*/
     color: #ffffff;
 }
-
+#heroDescription{
+    font-size: x-small;
+    text-align: center;
+}
+.HeroPicture{
+   width: 10%;
+}
 
