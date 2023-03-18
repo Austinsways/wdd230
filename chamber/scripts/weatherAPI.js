@@ -34,8 +34,10 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc);
     weatherCondition.innerHTML =  `<strong>${desc}</strong>`;
     windspeed.textContent = weatherData.wind.speed;
+    if (weatherData.main.temp <= 50 && weatherData.wind.speed > 3){
     const windChillCalculated = 35.74+ 0.6215*weatherData.main.temp - 35.75*weatherData.wind.speed**0.16 + 0.4275*weatherData.main.temp*weatherData.wind.speed**0.16;
     windChill.textContent = windChillCalculated.toFixed(1);
+    };
 
   }
   
