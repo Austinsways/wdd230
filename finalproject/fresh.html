@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Creat a Fruit Drink!</title>
+</head>
+<body>
+    <header class="HeaderFormat">
+        <div class="HeaderInfo">
+            <div class="logoWrapper">
+                <img src="images/fruitLogo.JPG" class="BountifulLogo">
+            </div>
+            <div class="CompanyHeaderInfo">
+                <h1>
+                    Bountiful Foods
+                </h1>
+                <p>
+                    1234 Carlsbad California - and many other locations!
+                </p>
+                <p>
+                    1-800-123-4567
+                </p>
+            </div>
+            <div class="HeaderContactInfo">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://Instagram.com">Instagram</a>
+                <a href="https://Twitter.com">Twitter</a>
+            </div>
+        </div>
+        <div class="NavBar">
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh!</a>
+            <a href="aboutUs.html">About us!</a>
+        </div>
+
+    </header>
+    
+	<h1 class="CallToDrink">Build Your Own Specialty Drink!</h1>
+	<form class="DrinkMixForm">
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname" required>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required>
+		
+		<label for="fruit1">Select Fruit 1:</label>
+		<select id="fruit1" class="FruitPicker">
+			<option value="" selected disabled>Select Fruit</option>
+		</select>
+		
+		<label for="fruit2">Select Fruit 2:</label>
+		<select id="fruit2" class="FruitPicker">
+			<option value="" selected disabled>Select Fruit</option>
+        </select>
+		
+		<label for="fruit3">Select Fruit 3:</label>
+		<select id="fruit3" class="FruitPicker">
+			<option value="" selected disabled>Select Fruit</option>
+		</select>
+		
+		<label for="instructions">Special Instructions:</label>
+		<textarea id="instructions" name="instructions"></textarea>
+		
+		<input type="submit" value="Mix It!" class="MixButton">
+	</form>
+
+    <div class="DrinkOutput">
+        <h2>Healthy Choice! Here's your order:</h2>
+        <div class="Order">
+            <p>first name: <span id="FirstName">placeholder</span></p>
+            <p>email: <span id="Email">placeholder</span></p>
+            <p>Phone Number: <span id="PhoneNumber">placeholder</span></p>
+            <p>Fruit 1: <span id="Fruit1">placeholder</span></p>
+            <p>Fruit 2: <span id="Fruit2">placeholder</span></p>
+            <p>Fruit 3: <span id="Fruit3">placeholder</span></p>
+            <p>Special Instructions: </p>
+            <p>Placeholder for special instructions</p>
+            <p>Order Submitted On: <span id="OrderDate">placeholder date</span></p>
+            <p>Nutrition</p>
+            <p>Carbohydrates: <span id="Carbohydrates">placeholder</span></p>
+            <p>Fats: <span id="Fats">placeholder</span></p>
+            <p>Proteins: <span id="Proteins">placeholder</span></p>
+            <p>Sugars: <span id="Sugars">placeholder</span></p>
+            <p>Calories: <span id="Calories">placeholder</span></p>
+        </div>
+
+    </div>
+
+	<script src="scripts/DrinkMix.js"></script>
+</body>
+</html>

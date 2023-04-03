@@ -1,5 +1,5 @@
 body{
-    background-color: #7AC313;
+    background-color: #C6F08D;
 }
 a{
     color: black;
@@ -13,7 +13,7 @@ a:hover{
     border: 1px solid black;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    background-color: #FB3636;
+    background-color: #DD766E;
 }
 .HeaderInfo{
     display: grid;
@@ -65,7 +65,7 @@ a:hover{
     margin-bottom: 20px;
     grid-gap: 10px;
     border-radius: 10px;
-    background-color: #D2eC00;
+    background-color: #DD766E;
 }
 .Statistics h2{
     margin: 0 auto;
@@ -83,7 +83,7 @@ a:hover{
     border: 1px solid black;
     grid-gap: 10px;
     border-radius: 10px;
-    background-color: #D2eC00;
+    background-color: #DD766E;
 }
 .DescriptionIMageWrapper{
     width: 100%;
@@ -111,7 +111,7 @@ a:hover{
     border: 1px solid black;
     grid-gap: 10px;
     border-radius: 10px;
-    background-color: #D2eC00;
+    background-color: #DD766E;
 }
 .DescriptionIMageWrapper2{
     
@@ -162,5 +162,41 @@ a:hover{
 }
 .DatedWeatherDisplay div{
     border: 1px solid black;
-    background-color: #D2eC00;
+    background-color: #DD766E;
+}
+
+/*////////////////Fresh (drink mix) page//////////////////////*/
+.DrinkMixForm{
+    margin: 3% 20%;
+    border: 1px solid black;
+    display: grid;
+    padding: 30px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #DD766E;
+    
+}
+.CallToDrink{
+    text-align: center;
+}
+.MixButton{
+    grid-column: 1/3;
+}
+.DrinkOutput{
+    display:grid;
+    grid-gap: 10px;
+    
+}
+.DrinkOutput *{
+    margin: 0 auto;
+    
+}
+.Order{
+    border: 1px solid black;
+    background-color: #DD766E;
+}
+.Order *{
+    padding: 8px;
+    text-align: center;
+    
 }
