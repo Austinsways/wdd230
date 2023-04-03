@@ -1,0 +1,166 @@
+body{
+    background-color: #7AC313;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: white;
+}
+/*////////////////Header Styling//////////////////////*/
+.HeaderFormat{
+    display: grid;
+    border: 1px solid black;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #FB3636;
+}
+.HeaderInfo{
+    display: grid;
+    grid-template-columns: 90px 70% 1fr;
+    border-bottom: 1px solid black;
+}
+.logoWrapper{
+    width: 75px;
+    padding: 5px;
+}
+.BountifulLogo{
+    width: 100%;
+}
+
+.CompanyHeaderInfo{
+    display: grid;
+}
+.CompanyHeaderInfo * {
+    margin: 0;
+}
+.HeaderContactInfo{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.HeaderContactInfo *{
+    margin: 0 auto;
+    margin-left: 0;
+}
+/*Navigation Bar*/
+.NavBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+.NavBar *{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+/* Statistics Box */
+.Statistics{
+    display: grid;
+    border: 1px solid black;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: #D2eC00;
+}
+.Statistics h2{
+    margin: 0 auto;
+}
+.Statistics p{
+    margin: 0 auto;
+}
+
+/* description box(s) */
+.DescriptionBox1{
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 30% 1fr;
+    margin: 20px 3%;
+    border: 1px solid black;
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: #D2eC00;
+}
+.DescriptionIMageWrapper{
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 1;
+    margin: 3%;
+}
+.DescriptionImage1{
+    width: 100%;
+}
+.DescriptionBox1 h2{
+    margin: 0 auto;
+}
+.DescriptionBox1 p{
+    grid-row: 2;
+    grid-column: 2;
+    margin: 0 auto;
+    text-align: center;
+}
+.DescriptionBox2{
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr 30%;
+    margin: 20px 3%;
+    border: 1px solid black;
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: #D2eC00;
+}
+.DescriptionIMageWrapper2{
+    
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 2;
+    box-sizing: border-box;
+    padding: 3%;
+    
+}
+.DescriptionImage2{
+    width: 100%;
+    
+    
+}
+.DescriptionBox2 a{
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.DescriptionBox2 p{
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+/* weather stuff */
+.WeatherDisplay{
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px 3%;
+}
+.WeatherDisplay h4{
+    margin: 0 auto;
+    grid-column: 1/5;
+}
+.DatedWeatherDisplay {
+    
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+
+}
+.DatedWeatherDisplay p{
+    text-align: center;
+}
+.DatedWeatherDisplay div{
+    border: 1px solid black;
+    background-color: #D2eC00;
+}
