@@ -90,8 +90,12 @@ async function createMixOutput(formValues) {
     OrderDiv.appendChild(caloriesP);
 
     DrinkOutputDiv.appendChild(OrderDiv);
+    const lastElement = document.getElementById("footer");
+    const parentElement = lastElement.parentNode;
+    parentElement.insertBefore(DrinkOutputDiv, lastElement)
 
-    document.body.appendChild(DrinkOutputDiv);
+
+    //document.body.appendChild(DrinkOutputDiv);
 
     function createParagraph(labelText, idName, spanElementValue) {
         const pElement = document.createElement("p");
