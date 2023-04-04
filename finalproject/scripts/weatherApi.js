@@ -48,7 +48,7 @@ async function apiFetch() {
     for (i = 0; i<3; i++) {
         const temperature = weeklyForecastData.list[i].main.temp;
         const humidity = weeklyForecastData.list[i].main.humidity;
-        temperatureList[i].innerHTML = `<strong>${temperature.toFixed(0)}</strong>`;
+        temperatureList[i].innerHTML = `<strong>${temperature.toFixed(0)}℉</strong>`;
         humidityList[i].innerHTML = `<strong>${humidity}</strong>`;
     }
 }

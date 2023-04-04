@@ -1,11 +1,22 @@
 body{
     background-color: #C6F08D;
+    margin: 0;
 }
 a{
     color: black;
 }
 a:hover{
     color: white;
+}
+#FooterGrid{
+    background-color: #DD766E;
+    margin: 0;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#FooterGrid *{
+    margin: 20px auto;
 }
 /*////////////////Header Styling//////////////////////*/
 .HeaderFormat{
@@ -131,6 +142,7 @@ a:hover{
     margin: 0 auto;
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
 }
 .DescriptionBox2 p{
     grid-row: 2;
@@ -200,3 +212,28 @@ a:hover{
     text-align: center;
     
 }
+
+
+/*////////////////About us page//////////////////////*/
+#AboutUsBody{
+    display: grid;
+    margin: 3% 20%;
+}
+#AboutUsBody * {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+#AboutUsBody p{
+    border: 1px solid black;
+    background-color: #DD766E;
+}
+#AboutUsBody h1, #AboutUsBody h2{
+    padding: 20px;
+}
+.CarlsbadMap{
+    border: 1px solid black;
+    width: 90%;
+    height: 400px;
+}
+

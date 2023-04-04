@@ -102,10 +102,24 @@ async function createMixOutput(formValues) {
         pElement.appendChild(spanElement);
         return pElement;
     }
+    incrementTotalDrinks();
 
 
 }
 
+function incrementTotalDrinks() {
+    
+    
+    if (!localStorage.getItem("TotalDrinks")){
+        localStorage.setItem("TotalDrinks", 0);
+        
+    } else {
+        const TotalDrinks = Number(localStorage.getItem("TotalDrinks")) + 1;
+        localStorage.setItem("TotalDrinks", TotalDrinks);
+        
+    }
+    
+}
 
 async function populateFruitOptions(fruitDataURL) {
     const requestResponse = await fetch(fruitDataURL); 
@@ -127,3 +141,5 @@ async function populateFruitOptions(fruitDataURL) {
 }
 
 populateFruitOptions(fruitDataUrl);
+
+

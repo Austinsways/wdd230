@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -43,28 +45,29 @@
             <h2>Your Statistics!</h2>
             <p>Specialty Drinks Created: <span class="DrinksCreated">placeholder</span></p>
             <p>Days since Last drink: <span class="DaysSinceLastDrink">placeholder</span></p>
-            <p>Favorite Fruit: <span class="FavoriteFruit">placeholder</span></p>
+            
 
         </div>
+        <script src="scripts/displayStatistics.js"></script>
 
         <div class="DescriptionBox1">
             <div class="DescriptionIMageWrapper">
                 <img src="images/Description1FruitPhoto.JPG" class="DescriptionImage1">
             </div>
-            <h2>The best Fruit in Coastal California! </h2>
+            <h2>The best fruit in Coastal California! </h2>
             <p>Coastal California is renowned for producing some of the most delicious and diverse fruits, ranging from juicy strawberries to ripe avocados. The region's mild climate and fertile soil provide ideal growing conditions, resulting in high-quality, flavorful fruits that are enjoyed by locals and tourists alike. Whether you're looking for a healthy snack or an ingredient for your culinary creations, the best fruit in Coastal California is sure to satisfy your taste buds.</p>
         </div>
 
         <div class="WeatherDisplay">
             <h4><span id="WeatherCondition">condition description</span> is the perfect weather for a fruit drink!</h4>
-            <div class="DatedWeatherDisplay">
+            <div class="DatedWeatherDisplay" id="TodaysWeather">
                 <p>The best day for a fruit drink (Today!)</p>
                 <div class="CurrentWeatherDescriptions">
                     <p>Temperature: <span class="CurrentTemperature">placeholder temp</span></p>
                     <p>Humidity: <span class="CurrentHumidity">placeholder Humidity</span></p>
                 </div>
             </div>
-            <div class="DatedWeatherDisplay">
+            <div class="DatedWeatherDisplay" id="TommorowsWeather">
                 <p>The second Best Day for a fruit drink (Tommorow)</p>
                 <div>
                     <p>Temperature: <span class="TommorowTemperature temperature">placeholder temp</span></p>
@@ -100,9 +103,13 @@
     </main>
 
     <footer>
+        <div id="FooterGrid">
+            <h4>Created By Austin Eldredge</h4>
+            <h4>Last Modified: <span id="DayLastModified">placeholder</span></h4>
 
+        </div>
     </footer>
-
+    <script src="scripts/DaysSinceVisit.js"></script>
     
 </body>
 </html>

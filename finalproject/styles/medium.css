@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .WeatherDisplay{
+        display: grid;
+        grid-template-rows: 20px  1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 20px 3%;
+    }
+    .WeatherDisplay div{
+        grid-row: 3;
+    }
+    #TodaysWeather{
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .DrinkMixForm{
+        margin: 3% 10%;
+        grid-gap: 5px;
+        
+        
+        
+    }
+    #AboutUsBody{
+        
+        margin: 3% 10%;
+    }
+
+
+
+  }

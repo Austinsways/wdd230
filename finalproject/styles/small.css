@@ -1,0 +1,99 @@
+@media only screen and (max-width: 767px) {
+    
+    .DescriptionBox1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-gap: 30px;
+        place-items: center;
+
+    }
+    .DescriptionBox1 h2{
+        
+        text-align: center;
+        vertical-align: middle;
+    }
+    .DescriptionBox1 p {
+        grid-column: 1/3;
+    
+    }
+
+    .DescriptionIMageWrapper{
+    
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1;
+        box-sizing: border-box;
+        padding: 3%;
+    }
+
+    .DescriptionBox2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-gap: 30px;
+        place-items: center;
+
+    }
+    .DescriptionBox2 a{
+        
+        text-align: center;
+        vertical-align: middle;
+    }
+    .DescriptionBox2 p {
+        grid-column: 1/3;
+    
+    }
+
+    .DescriptionIMageWrapper2{
+    
+        width: 100%;
+        grid-row: 1;
+        grid-column: 2;
+        box-sizing: border-box;
+        padding: 3%;
+    }
+
+
+    .WeatherDisplay{
+        display: grid;
+        grid-template-rows: 20px  1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 20px 3%;
+    }
+    .WeatherDisplay h4{
+        grid-column: 1;
+    }
+    .WeatherDisplay div{
+        grid-row: auto;
+        grid-column: 1;
+    }
+    #TodaysWeather{
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    #TommorowsWeather{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .DrinkMixForm{
+        margin: 3% 5%;
+        grid-gap: 5px;
+        
+        
+        
+    }
+    #AboutUsBody{
+        
+        margin: 3% 5%;
+    }
+
+
+  }
+  
+  
+  
+  
+  
+  
+  
